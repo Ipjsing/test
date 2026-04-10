@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: auto;
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    margin: 0 15px;
+}
+
+.Registration-form {
+    width: 400px;
+    height: fit-content;
+    padding: 1rem;
+    background: black;
+    color: yellow;
+}
+
+.Registration-form h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.Registration-form P {
+    width: 100%;
+    height: 70%;
+    margin: 10px 0;
+}
+
+p {
+    position: flex;
+    top: 140px;
+    left: 100px;
+
+}
