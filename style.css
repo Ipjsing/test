@@ -1,45 +1,111 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    height: auto;
-    padding: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f4ff, #e8eef9);
+    color: #1f2937;
     min-height: 100vh;
 }
 
-.container {
-    margin: 0 15px;
+.page-shell {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
 }
 
-.Registration-form {
-    width: 400px;
-    height: fit-content;
-    padding: 1rem;
-    background: black;
-    color: yellow;
+.form-card {
+    width: min(100%, 420px);
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+    padding: 32px;
 }
 
-.Registration-form h1 {
-    font-size: 36px;
-    text-align: center;
+.card-header h1 {
+    margin: 0;
+    font-size: 1.75rem;
+    letter-spacing: -0.03em;
 }
 
-.Registration-form P {
+.card-header p {
+    margin: 12px 0 0;
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+.card-form {
+    margin-top: 26px;
+    display: grid;
+    gap: 16px;
+}
+
+.card-form label {
+    display: block;
+    font-size: 0.94rem;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+.card-form input,
+.card-form textarea,
+.card-form select {
     width: 100%;
-    height: 70%;
-    margin: 10px 0;
+    border: 1px solid #d1d5db;
+    border-radius: 14px;
+    padding: 14px 16px;
+    font-size: 1rem;
+    background: #f8fafc;
+    color: #111827;
 }
 
-p {
-    position: flex;
-    top: 140px;
-    left: 100px;
-
+.card-form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, #6b7280 50%),
+                      linear-gradient(135deg, #6b7280 50%, transparent 50%);
+    background-position: calc(100% - 18px) calc(1em + 2px), calc(100% - 14px) calc(1em + 2px);
+    background-size: 8px 8px, 8px 8px;
+    background-repeat: no-repeat;
 }
+
+.card-form input:focus,
+.card-form textarea:focus,
+.card-form select:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12);
+}
+
+.card-form textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+.card-form button {
+    margin-top: 8px;
+    width: 100%;
+    border: none;
+    border-radius: 14px;
+    padding: 14px;
+    background: #4338ca;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 150ms ease, background 150ms ease;
+}
+
+.card-form button:hover {
+    background: #3730a3;
+    transform: translateY(-1px);
+}
+
+
+
+
