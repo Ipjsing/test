@@ -2,40 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewpoint" content="width=device-width, initial scale=1.o">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration form</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="Registration-form">
-            <h1>Registration form</h1>
-            <form action="#" method="post">
-                <p>Full name:</p>
-                <input type="text" name="full name" placeholder="full name">
-                <p>Email address:</p>
-                <input type="text" name="email address" placeholder="email address">
-                <p>Password:</p>
-                <input type="text" name="Password" placeholder="Password">
-                <p>Age range:</p>
-            </form>
-            <select name="age">
-                <option value="18-25">18-25</option>
-                <option value="26-35">26-35</option>
-                <option value="36-50">36-50</option>
-                <option value="50+">50+</option>
-            </select>
-            <br>
-            <p>Country</p>
-            <select name="counrty">
-                <label for="counrty">
-                    <option value="Nigeria">Nigeria</option>
-                    <option value="egypt">Egypt</option>
-                    <option value="algeria">Algeria</option>
-                    <option value="mali">Mali</option>
-                    <option value="china">China</option>
+    <main class="page-shell">
+        <section class="form-card">
+            <header class="card-header">
+                <h1>Register</h1>
+                <p>Join us by filling out the form below.</p>
+            </header>
+            <form class="card-form" action="#" method="post">
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
-            </select>
-        </div>
-    </div>
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+                <label for="age-range">Age range</label>
+                <select id="age-range" name="age-range" required>
+                    <option value="">Select your age range</option>
+                    <option value="under-18">Under 18</option>
+                    <option value="18-26">18-26</option>
+                    <option value="26-35">26-35</option>
+                    <option value="36-50">36-50</option>
+                    <option value="50+">50+</option>
+                </select>
+
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="nigeria">Nigeria</option>
+                    <option value="egypt">Egypt</option>
+                    <option value="uganda">Uganda</option>
+                    <option value="south africa">South Africa</option>
+                    <option value="kenya">kenya</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="message">About you</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us a little about yourself"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
 </body>
+</html>
+       
